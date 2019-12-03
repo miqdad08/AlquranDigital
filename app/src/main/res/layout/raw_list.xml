@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="15dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvNomorSurah"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/oval"
+        tools:text="1"/>
+
+
+    <TextView
+        android:id="@+id/tvNamaSurah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Al-Fatihah"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/tvNomorSurah"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvJmlhAyat"
+        android:layout_toEndOf="@+id/tvNomorSurah"
+        android:layout_below="@+id/tvNamaSurah"
+        android:layout_margin="3dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:text="7 ayat"/>
+
+            <ImageView
+                android:id="@+id/btSound"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_volume_up_black_24dp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+</RelativeLayout>

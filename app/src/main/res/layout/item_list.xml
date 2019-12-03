@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvNomorAyat"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/oval"
+        tools:text="1"/>
+
+
+    <TextView
+        android:id="@+id/tvArab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Arab"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/tvNomorAyat"
+        android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvArti"
+            android:layout_toEndOf="@+id/tvNomorAyat"
+            android:layout_below="@+id/tvArab"
+            android:layout_margin="3dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:text="artinya"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLatin"
+        android:layout_toEndOf="@+id/tvNomorAyat"
+        android:layout_below="@+id/tvArti"
+        android:layout_margin="3dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:text="bismillah"/>
+
+
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+
+
